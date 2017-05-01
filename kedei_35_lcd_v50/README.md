@@ -1,3 +1,4 @@
+```html:tite
 
 Original text from
  KeDei 3.5 inch 480x320 TFT lcd from ali
@@ -15,7 +16,34 @@ http://www.neko.ne.jp/~freewing/
 FREEWING-JP/tinydrm - forked from notro/tinydrm
 https://github.com/FREEWING-JP/tinydrm/tree/feature/kedei_35_v50
 --------------------------------
+```
+---
+## KeDei version V5.0 only 
 
+ This program works only with KeDei 3.5 inch TFT LCD module V 5.0.  
+ Other versions will not work except V1.0 and V2.0 .  
+  
+ keidei_v10 = may be work ?  
+ keidei_v20 = may be work ?  
+ keidei_v50 = work confirmed by FREE WING  
+
+---
+## Other Resources
+
+#### Orange Pi PC 2 Allwinner H5 FBTFT fbflex 3.5 inch TFT LCD module SPI Control program
+https://github.com/FREEWING-JP/OrangePi_PC2_FBTFT_fbflex_35_lcd  
+
+#### Raspberry Pi FBTFT fbflex 3.5 inch TFT LCD module SPI Control program
+https://github.com/FREEWING-JP/RaspberryPi_FBTFT_fbflex_35_lcd  
+
+#### Raspberry Pi KeDei 3.5 inch TFT LCD module V5.0 SPI Control program
+https://github.com/FREEWING-JP/RaspberryPi_KeDei_35_lcd_v50  
+
+#### tinydrm for KeDei 3.5 inch V5.0 LCD module
+https://github.com/FREEWING-JP/tinydrm/tree/feature/kedei_35_v50/kedei_35_lcd_v50  
+
+
+```html:body
 
 # ========
 # ========
@@ -131,4 +159,15 @@ cd ~/tinydrm/
 make
 sudo rmmod keidei
 sudo insmod keidei.ko
+
+```
+
+---
+## Picture
+
+![Raspberry Pi tinydrm for KeDei 3.5 inch V5.0 LCD module](./tinydrm_kedei_35_lcd_v50_1.jpg)
+
+![Raspberry Pi tinydrm for KeDei 3.5 inch V5.0 LCD module](./tinydrm_kedei_35_lcd_v50_2.jpg)
+
+![Raspberry Pi KeDei 3.5 inch LCD V5.0 module](./kedei_35_lcd_v50_module.jpg)
 
