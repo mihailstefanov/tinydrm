@@ -3,7 +3,7 @@
 ```
 sudo fbi -d /dev/fb1 -T 1 -a ./fortnite.jpg
 ```
-![Screenshot v6+](./screen.jpg "Screenshot after fbi load")
+![Screenshot v6+](https://github.com/mihailstefanov/tinydrm/blob/master/keidei35_v60/screen.JPG "Screenshot after fbi load")
 
 ## Additional information
 
@@ -15,5 +15,6 @@ https://github.com/FREEWING-JP/tinydrm/tree/feature/kedei_35_v50/kedei_35_lcd_v5
 https://github.com/lzto/RaspberryPi_KeDei_35_lcd_v62
 
 
-### Out of tree tinydrm modules https://github.com/notro/tinydrm/wiki
+### Out of tree tinydrm modules 
+https://github.com/notro/tinydrm/wiki
 https://github.com/notro/tinydrm
