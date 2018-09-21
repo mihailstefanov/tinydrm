@@ -1,0 +1,56 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "brcm,bcm2835", "brcm,bcm2708", "brcm,bcm2709";
+
+	fragment@0 {
+		target = <&spi0>;
+		__overlay__ {
+			status = "okay";
+
+			spidev@0{
+				status = "disabled";
+			};
+
+			spidev@1{
+				status = "disabled";
+			};
+		};
+	};
+
+    fragment@1 {
+		target = <&gpio>;
+		__overlay__ {
+			keidei_pins: keidei_pins {
+				brcm,pins = <8>;
+				brcm,function = <1>; /* in out out out */
+			};
+		};
+	};
+
+	fragment@2 {
+		target = <&spi0>;
+		__overlay__ {
+			/* needed to avoid dtc warning */
+			#address-cells = <1>;
+			#size-cells = <0>;
+
+			keidei: keidei@0{
+				compatible = "keidei,keidei_v60";
+				reg = <1>;
+
+				spi-max-frequency = <32000000>;
+				spi-cpol;
+				spi-cpha;
+                tsc-gpios = <&gpio 8 0>;
+				rotation = <0>;
+			};
+		};
+	};
+
+	__overrides__ {
+		speed =    <&keidei>, "spi-max-frequency:0";
+		rotation = <&keidei>, "rotation:0";
+	};
+};
